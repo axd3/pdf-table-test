@@ -12,7 +12,7 @@ public class FastTest {
     @Test
     public void createPdf () throws IOException {
         OutputStream os = new FileOutputStream("bar.pdf");
-        URL resource = this.getClass().getResource("/templates/test.html");
+        URL resource = this.getClass().getResource("/templates/openhtmltopdf-example.html");
         PdfRendererBuilder builder = new PdfRendererBuilder();
         builder.useFastMode();
         builder.usePdfVersion(1.7f);

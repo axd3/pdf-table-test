@@ -114,6 +114,11 @@ public class PdfService {
         final StringWriter writer = new StringWriter();
         this.tableTest.execute(writer, "");
         String html = writer.toString();
+
+        FileWriter fw = new FileWriter("test.html");
+        fw.write(html);
+        fw.close();
+
         return createPdf(html);
     }
 
