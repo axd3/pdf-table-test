@@ -1,0 +1,643 @@
+<html>
+<head>
+  <style>
+    @page {
+      size: portrait a4;
+      margin-top: 1cm;
+      margin-right: 1cm;
+      /*Da Footer im Margin Bereich liegt 1.5cm mehr als oben und rechts*/
+      margin-bottom: 2.5cm;
+      margin-left: 2.5cm;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    body {
+      font-size: small;
+      font-family: "Roboto", sans-serif;
+    }
+
+    /* Genau 15 Zellen pro Reihe */
+    .datentabelle-table-cell {
+      width: 10.7mm;
+    }
+
+    .datentabelle-table-cell-numeric {
+      text-align: right;
+    }
+
+    table.datentabelle {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table.datentabelle td, th {
+      font-size: x-small;
+      border-collapse: collapse;
+    }
+
+
+    table.datentabelle td.datentabelle-border-right, th.datentabelle-border-right {
+      border-right: 1px solid black;
+    }
+
+    table.datentabelle th.datentabelle-border-bottom, th.datentabelle-border-bottom {
+      border-bottom: 1px solid black;
+    }
+
+    table.datentabelle tr.datentabelle-rowStunde td {
+      font-weight: bold;
+
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+  </style>
+</head>
+<body>
+<table class="datentabelle">
+  <thead>
+  <tr>
+    <th colspan="3" class="datentabelle-header datentabelle-border-right">
+      Zeit
+    </th>
+    <th colspan="7" class="datentabelle-header datentabelle-border-right">
+      Typ
+    </th>
+    <th colspan="3" class="datentabelle-header datentabelle-border-right">
+      Klasse
+    </th>
+    <th rowspan="2" class="datentabelle-header datentabelle-border-bottom datentabelle-border-right">
+      Prozent
+    </th>
+    <th rowspan="2" class="datentabelle-header datentabelle-border-bottom">Einheiten</th>
+  </tr>
+  <tr>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">von</div>
+    </th>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">bis</div>
+    </th>
+    <th class="datentabelle-border-bottom datentabelle-border-right">
+      <div class="datentabelle-table-cell"></div>
+    </th>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">A</div>
+    </th>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">B</div>
+    </th>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">C</div>
+    </th>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">D</div>
+    </th>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">E</div>
+    </th>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">F</div>
+    </th>
+    <th class="datentabelle-border-bottom datentabelle-border-right">
+      <div class="datentabelle-table-cell">G</div>
+    </th>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">H</div>
+    </th>
+    <th class="datentabelle-border-bottom">
+      <div class="datentabelle-table-cell">I</div>
+    </th>
+    <th class="datentabelle-border-bottom datentabelle-border-right">
+      <div class="datentabelle-table-cell">J</div>
+    </th>
+  </tr>
+  </thead>
+  <tr class="datentabelle-row">
+    <td>
+      <div class="datentabelle-table-cell">
+        06:00
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        06:15
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric"></div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">278</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">10</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">2</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">290</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">12</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">11</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4.1%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">306</div>
+    </td>
+  </tr>
+  <tr class="datentabelle-row">
+    <td>
+      <div class="datentabelle-table-cell">
+        06:15
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        06:30
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric"></div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">445</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">19</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">12</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">469</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">24</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">20</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">5.1%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">505</div>
+    </td>
+  </tr>
+  <tr class="datentabelle-row">
+    <td>
+      <div class="datentabelle-table-cell">
+        06:30
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        06:45
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric"></div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">560</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">21</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">589</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">28</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">24</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4.8%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">630</div>
+    </td>
+  </tr>
+  <tr class="datentabelle-row">
+    <td>
+      <div class="datentabelle-table-cell">
+        06:45
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        07:00
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric"></div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">634</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">15</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">6</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">2</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">10</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">658</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">22</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">16</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3.3%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">693</div>
+    </td>
+  </tr>
+  <tr class="datentabelle-rowStunde">
+    <td>
+      <div class="datentabelle-table-cell">
+        06:00
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        07:00
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">Stunde</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1917</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">65</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">6</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">15</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">28</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">2006</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">86</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">71</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4.3%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">2133</div>
+    </td>
+  </tr>
+  <tr class="datentabelle-row">
+    <td>
+      <div class="datentabelle-table-cell">
+        07:00
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        07:15
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric"></div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">685</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">22</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">7</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">18</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">718</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">32</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">25</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4.5%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">771</div>
+    </td>
+  </tr>
+  <tr class="datentabelle-row">
+    <td>
+      <div class="datentabelle-table-cell">
+        07:15
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        07:30
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric"></div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">801</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">19</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">22</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">828</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">27</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">23</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3.3%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">876</div>
+    </td>
+  </tr>
+  <tr class="datentabelle-row">
+    <td>
+      <div class="datentabelle-table-cell">
+        07:30
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        07:45
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric"></div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">822</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">24</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">9</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">11</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">856</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">34</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">25</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">4.0%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">909</div>
+    </td>
+  </tr>
+  <tr class="datentabelle-row">
+    <td>
+      <div class="datentabelle-table-cell">
+        07:45
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        08:00
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric"></div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">845</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">20</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">5</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">21</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">871</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">26</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">21</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3.0%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">913</div>
+    </td>
+  </tr>
+  <tr class="datentabelle-rowStunde">
+    <td>
+      <div class="datentabelle-table-cell">
+        07:00
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell">
+        08:00
+      </div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">Stunde</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3153</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">85</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">9</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">25</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">1</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">72</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">0</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3273</div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">119</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">94</div>
+    </td>
+    <td class="datentabelle-border-right">
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3.6%
+      </div>
+    </td>
+    <td>
+      <div class="datentabelle-table-cell datentabelle-table-cell-numeric">3469</div>
+    </td>
+  </tr>
+
+</table>
+
+</body>
+</html>
